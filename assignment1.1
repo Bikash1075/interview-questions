@@ -1,0 +1,269 @@
+1 What is a dictionary in Python?
+Python dictionary is one of the supported data types in Python. 
+It is an unordered collection of elements. 
+The elements in dictionaries are stored as key-value pairs. 
+Dictionaries are indexed by keys.
+
+For example, below we have a dictionary named ‘dict’. 
+It contains two keys, Country and Capital, along with their 
+corresponding values, India and New Delhi.
+
+Syntax:
+
+dict={‘Country’:’India’,’Capital’:’New Delhi’, }
+
+2.What are functions in Python?
+A function is a block of code which is executed only when a call is made 
+to the function. def keyword is used to define a particular function as 
+shown below:
+
+def function():
+print("Hi, Welcome to Intellipaat")
+function(); # call to the function
+Output:
+Hi, Welcome to Intellipaat
+
+3.What are the common built-in data types in Python?
+Python supports the below-mentioned built-in data types:
+
+Immutable data types:
+
+Number
+String
+Tuple
+Mutable data types:
+
+List
+Dictionary
+set
+
+4.What are local variables and global variables in Python?
+Local variable: 
+Any variable declared inside a function is known as Local variable 
+and it’s accessibility remains inside that function only.
+
+Global Variable: 
+Any variable declared outside the function is known as Global variable 
+and it can be easily accessible by any function present throughout the program.
+
+g=4                #global variable
+def func_multiply():
+l=5       #local variable
+m=g*l
+return m
+func_multiply()
+Output: 20
+If you try to access the  local variable outside the multiply function 
+then you will end up with getting an error.
+
+5.Is indentation required in Python?
+Indentation in Python is compulsory and is part of its syntax.
+
+All programming languages have some way of defining the scope and 
+extent of the block of codes. In Python, it is indentation. 
+Indentation provides better readability to the code, 
+which is probably why Python has made it compulsory.
+
+6.How does break, continue, and pass work?
+These statements help to change the phase of execution from the 
+normal flow that is why they are termed loop control statements.
+
+Python break: 
+This statement helps terminate the loop or the statement and 
+pass the control to the next statement.
+
+Python continue: This statement helps force the execution of the next iteration 
+when a specific condition meets, instead of terminating it.
+
+Python pass: This statement helps write the code syntactically 
+and wants to skip the execution. 
+It is also considered a null operation as nothing happens 
+when you execute the pass statement.
+
+7.What is slicing in Python?
+As the name suggests, ‘slicing’ is taking parts of.
+Syntax for slicing is [start : stop : step]
+start is the starting index from where to slice a list or tuple
+stop is the ending index or where to sop.
+step is the number of steps to jump.
+Default value for start is 0, stop is number of items, step is 1.
+Slicing can be done on strings, arrays, lists, and tuples.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(numbers[1 : : 2])  #output : [2, 4, 6, 8, 10]
+
+8.Mention five benefits of using Python
+Here are the five benefits of using Python:
+
+Python comprises of a huge standard library for most Internet platforms 
+like Email, HTML, etc.
+Python does not require explicit memory management as the interpreter itself 
+allocates the memory to new variables and free them automatically
+Provide easy readability due to use of square brackets
+Easy-to-learn for beginners
+Having the built-in data types saves programming time and 
+effort from declaring variables
+
+9.How Will You Check If All the Characters in a String Are Alphanumeric?
+Python has an inbuilt method isalnum() which returns true 
+if all characters in the string are alphanumeric. 
+
+Example - 
+
+>> "abcd123".isalnum()
+
+Output: True
+
+10.How Will You Merge Elements in a Sequence?
+There are three types of sequences in Python:
+
+Lists 
+Tuples 
+Strings
+Example of Lists - 
+
+>>l1=[1,2,3]
+
+>>l2=[4,5,6]
+
+>>l1+l2
+
+Output: [1,2,3,4,5,6]
+
+11.What Is the Difference Between Del and Remove() on Lists?
+del
+
+remove()
+
+del removes all elements of a list within a given range 
+Syntax: del list[start:end]
+remove() removes the first occurrence of a particular character 
+Syntax: list.remove(element)
+Here is an example to understand the two statements - 
+
+>>lis=[‘a’, ‘b’, ‘c’, ‘d’]
+
+>>del lis[1:3]
+
+>>lis
+
+Output: [“a”,”d”]
+
+>>lis=[‘a’, ‘b’, ‘b’, ‘d’]
+
+>>lis.remove(‘b’)
+
+>>lis
+
+Output: [‘a’, ‘b’, ‘d’]
+
+12.How Do You Display the Contents of a Text File in Reverse Order?
+You can display the contents of a text file in reverse order using the following steps:
+
+Open the file using the open() function 
+Store the contents of the file into a list 
+Reverse the contents of the list
+Run a for loop to iterate through the list
+
+13.What Is Docstring in Python?
+This is one of the most frequently asked Python interview questions
+
+Docstrings are used in providing documentation to various Python modules, 
+classes, functions, and methods. 
+
+14. What is a boolean in Python?
+Boolean is one of the built-in data types in Python, 
+it mainly contains two values, and they are true and false. 
+
+Python bool() is the method used to convert a value to a boolean value.
+
+Syntax for bool() method: bool([a]) 
+
+15.Define the term lambda?
+Lambda is the small anonymous function in Python that is often used as an inline function.
+
+16. When would you use triple quotes as a delimiter?
+Triple quotes ‘’” or ‘“ are string delimiters that can span multiple lines 
+in Python. 
+Triple quotes are usually used when spanning multiple lines, 
+or enclosing a string that has a mix of single and double quotes contained therein.
+
+17. Write a program to count the number of capital letters in a file?
+with open(SOME_LARGE_FILE) as countletter:
+count = 0
+text = countletter.read()
+for character in text:
+if character.isupper():
+count += 1
+
+18. What is the maximum length of an identifier?
+Ans. The maximum possible length of an identifier in python is 79 characters.
+
+19.Which statement can we use if the statement is required syntactically, 
+but no action is needed for the program?
+Ans. Pass statement is used if the statement is required syntactically, 
+but no action is required for the program
+
+20. How can you use ternary operators (Ternary) in Python?
+Ans. Ternary operators are used to display conditional statements. 
+This consists of the true or false values.  Syntax :
+
+The ternary operator is indicated as:
+
+[on_true] if [expression] else [on_false] x, y = 25, 50big = x if x <y else y
+
+Example: The expression is evaluated as if x <and else and, 
+in this case, if x <y is true, then the value is returned as big = x 
+and if it is incorrect then big = y will be returned as a result.
+
+21. What does this mean? * args, ** kwargs? Why would we use it?
+Ans. * Args is used when you are not sure how many arguments to pass to a function, 
+or if you want to pass a list or tuple of stored arguments to a function. 
+
+** kwargs is used when we don’t know how many keyword arguments to 
+pass to a function, or it is used to pass the values ​​from a dictionary 
+as the keyword argument. 
+
+The args and kwargs identifiers are a convention, you can also use * bob and 
+** billy but that would not be wise>
+
+22.What is the map function in Python?
+Ans. The map function takes two arguments, one is iterable and another is 
+a function and applies the function to each element of the iterable. 
+If the given function accepts more than 1 argument then many iterables are given.
+
+23.Explain the bytes() function in Python.
+Ans. The bytes() function in Python returns a bytes object. 
+It converts objects into bytes objects. It also creates empty bytes objects 
+of the specified size.
+
+24.Explain the ‘with statement’.
+Ans. In Python, the ‘with statement’ is used for exception handling 
+and resource management. It makes the code cleaner and readable as it allows 
+a file to be opened and closed while executing a block of code containing 
+the ‘with statement’.
+
+25.Can we use a break and continue together in Python? How?
+Break and continue can be used together in Python. 
+The break will stop the current loop from execution, 
+while the jump will take it to another loop.
+
+26.In how many ways can we apply reverse strings?
+There are five ways in which the reverse string can be applied:
+
+Loops
+Recursions
+Stacks
+Extended slice syntax
+Reversed function
+
+27. What is [::-1} used for?
+[::-1} reverses the order of an array or a sequence. 
+However, the original array or the list remains unchanged.
+
+28. What are the is, not and in operators?
+Operators are functions that take two or more values and return the corresponding result.
+
+is: returns true when two operands are true
+not: returns inverse of a boolean value
+in: checks if some element is present in some sequence.
+
